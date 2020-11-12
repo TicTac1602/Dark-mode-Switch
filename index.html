@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dark Mode Switch</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="icon" type="img/png" href="img/icon.png">
+</head>
+<body>
+	<script type="text/javascript">
+		function Dark() {
+   		var element = document.body;
+  		element.classList.toggle("dark-mode");
+
+   		}
+
+   		function delay(){
+   			setTimeout(window.location.href = "thanks.html" ,50000);
+   		}
+	</script>
+	<div class="container">
+		<p>Switch me !</p>
+		<label class="switch">
+			<input type="checkbox" onclick="Dark(),delay()">
+			<span class="slider"></span>
+		</label>
+	</div>
+		
+</body>
+</html>

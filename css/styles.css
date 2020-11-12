@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+body{
+	background-color: #FAFAFA;
+	color: #060606;	
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.container p{
+	font-size: 48px;
+	font-family: 'Concert One', cursive;
+}
+.dark-mode{
+	background-color: #060606;
+	color: #FAFAFA
+}
+
+/* Slider component */
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f7b42c;
+	background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+	transition: ease-in-out .4s;
+}
+.slider:before {
+ 	position: absolute;
+	content: "";
+	height: 26px;
+ 	width: 26px;
+ 	left: 4px;
+ 	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+input:checked + .slider {
+	background-color: #0cbaba;
+	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+}
+input:checked + .slider:before{
+	transform: translateX(46px);
+}
+/* Rounded sliders */
+.slider {
+ 	border-radius: 34px;
+}
+
+.slider:before {
+ 	border-radius: 50%;
+}
