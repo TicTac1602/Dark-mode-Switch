@@ -11,17 +11,17 @@
 		function Dark() {
    		var element = document.body;
   		element.classList.toggle("dark-mode");
-
+  		delay();	
    		}
 
    		function delay(){
-   			setTimeout(window.location.href = "thanks.html" ,50000);
+   			setTimeout(function(){window.location.href = "thanks.html"} ,5000);
    		}
 	</script>
 	<div class="container">
-		<p>Switch me !</p>
+		<h1>Switch me !</h1>
 		<label class="switch">
-			<input type="checkbox" onclick="Dark(),delay()">
+			<input type="checkbox" onclick="Dark()">
 			<span class="slider"></span>
 		</label>
 	</div>
