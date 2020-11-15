@@ -5,26 +5,21 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="icon" type="img/png" href="img/icon.png">
-</head>
-<body>
 	<script type="text/javascript">
 		function Dark() {
-   		var element = document.body;
+			const elements = document.getElementsByClassName('container');
+			const element = elements[0];
   		element.classList.toggle("dark-mode");
-  		delay();	
-   		}
-
-   		function delay(){
-   			setTimeout(function(){window.location.href = "thanks.html"} ,5000);
    		}
 	</script>
-	<div class="container">
+</head>
+<body>	
+	<div class="container" id="div">
 		<h1>Switch me !</h1>
 		<label class="switch">
 			<input type="checkbox" onclick="Dark()">
-			<span class="slider"></span>
+			<div class="slider"></div>
 		</label>
 	</div>
-		
 </body>
 </html>

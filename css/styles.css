@@ -2,9 +2,9 @@
 
 body{
 	margin: 0;
-	background-image: url(../img/morning.png);
-	background-size: contain;
-	color: #060606;	
+	background-image: url(../img/morning.jpg);
+	background-size: cover;
+	color: #FAFAFA;	
 }
 h1{
 	margin-bottom: 200px;
@@ -34,9 +34,8 @@ h1{
 }
 
 .dark-mode{
-	background-image: url(../img/night.png);
-	background-size: contain;
-	color: #FAFAFA
+	background-image: url(../img/night.jpg);
+	background-size: cover;
 }
 
 /* Slider component */
@@ -64,9 +63,7 @@ h1{
 	transition: .4s;
 }
 input:checked + .slider {
-	background-color: #0cbaba;
-	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-
+	background-image: linear-gradient(405deg, #6e45e2 0%, #88d3ce 100%);
 }
 input:checked + .slider:before{
 	transform: translateX(46px);
@@ -78,12 +75,4 @@ input:checked + .slider:before{
 
 .slider:before {
  	border-radius: 50%;
-}
-
-
-.thanks{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
 }
